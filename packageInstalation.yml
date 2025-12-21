@@ -1,6 +1,6 @@
 ---
 #Commvault@1249
-- name: installngnix
+- name: all
   hosts: linux
   become: true
   roles:
