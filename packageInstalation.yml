@@ -1,0 +1,8 @@
+---
+#Commvault@1249
+- name: installngnix
+  hosts: linux
+  become: true
+  roles:
+    - rolewa
+

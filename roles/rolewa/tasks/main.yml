@@ -1,0 +1,7 @@
+---
+## Boolean Conditional check for installing Apache
+- name: Install Apache web server
+  apt:
+    name: apache2
+    state: absent
+  when: install_apache_flag
