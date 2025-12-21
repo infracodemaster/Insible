@@ -1,8 +1,10 @@
 ---
-#Commvault@1249
-- name: all
-  hosts: localhost
-  become: true
-  roles:
-    - rolewa
+- name: Install all available system updates
+  hosts: all
+  become: yes
 
+  tasks:
+    - - name: Install package
+  apt:
+    name: "{{ package_name }}"
+    state: present
