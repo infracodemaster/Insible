@@ -1,7 +1,7 @@
 ---
 #Commvault@1249
 - name: all
-  hosts: linux
+  hosts: localhost
   become: true
   roles:
     - rolewa
