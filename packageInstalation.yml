@@ -2,9 +2,8 @@
 - name: Install all available system updates
   hosts: all
   become: yes
-
   tasks:
-    - - name: Install package
-  apt:
-    name: "{{ package_name }}"
-    state: present
+    - name: Install package
+      apt:
+        name: "{{ package_name }}"
+        state: present
