@@ -1,7 +1,6 @@
 ---
 - name: Install all available system updates
   hosts: all
-  become: true
 
   tasks:
     - name: Update apt cache on Ubuntu
